@@ -1,0 +1,9 @@
+﻿<Solution>
+  <Project Path="ECM2.Walkthrough.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="ECM2.csproj" />
+  <Project Path="ECM2.Examples.csproj" />
+  <Project Path="sc.stylizedwater2.runtime.csproj" />
+  <Project Path="sc.stylizedwater2.editor.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+</Solution>
