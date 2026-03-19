@@ -9,7 +9,7 @@ Adjustable volumetric lighting for URP in Unity
 This is an example of applied volumetric lighting for URP in Unity based on [Christian Qiu's](https://github.com/CristianQiu/Unity-URP-Volumetric-Light) shaders and render graph support. His repo is highly recommended for compatibility and ease of use with full installation instructions available.
 <br>
 
-In this scene, volume strength from the point lights can be adjusted at runtime. Sets of traditional baked lightmaps are used with mixed lighting in Shadowmask mode, which are swapped out when enabling or disabling the different lights along with their respective baked emissive materials. Also, an Adaptive Probe Volume is applied for more accurate shadow blending.
+In this scene, volume strength from the point lights can be adjusted during runtime. Sets of traditional baked lightmaps are used with mixed lighting in Shadowmask mode, which are swapped out when enabling or disabling the different lights along with their respective baked emissive materials. Also, an Adaptive Probe Volume is applied for more accurate shadow blending.
 <br>
 
 Note: Some assets from the Unity Asset Store are required for a complete build. They are not included in this repo. Please see the Licenses section below for links to the assets. Otherwise, feel free to browse through the project files. Thanks.
@@ -22,11 +22,11 @@ Jump: Spacebar
 <br><br>
 
 ## Project Features
-* Adjustable volumetric lighting at runtime
+* Adjustable volumetric lighting during runtime
 * Main light, point light and spot light support
 * Supports Adaptive Probe Volumes
 * Compatible with Forward, Deferred, Forward+ and Deferred+ rendering paths
-* Traditional lightmap swapping at runtime
+* Traditional lightmap swapping during runtime
 * Mixed lighting using Shadowmask mode
 * Emissive material swapping
 * Adaptive Probe Volume for shadow blending
