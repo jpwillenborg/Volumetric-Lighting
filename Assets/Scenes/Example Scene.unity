@@ -1266,8 +1266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -750, y: 81}
-  m_SizeDelta: {x: 352, y: 850}
+  m_AnchoredPosition: {x: -750, y: 56}
+  m_SizeDelta: {x: 352, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413772875
 MonoBehaviour:
@@ -1364,7 +1364,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '''Esc" to Exit'
+  m_text: 'WASD to Move
+
+    Space to Jump'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1f89cd013ac504941a0e9197e831d245, type: 2}
   m_sharedMaterial: {fileID: 6375229964328751563, guid: 1f89cd013ac504941a0e9197e831d245, type: 2}
@@ -4498,7 +4500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2092385013}
   m_Layer: 5
-  m_Name: Exit
+  m_Name: Controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
