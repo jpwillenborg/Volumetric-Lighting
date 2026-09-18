@@ -25,8 +25,8 @@ public class ResolutionManager : MonoBehaviour
 
     void Awake ()
     {
-        Screen.SetResolution(1280, 720, false);
-        screenInfoCanvas.scaleFactor = 720f / 1080f;
+        Screen.SetResolution(960, 540, false);
+        screenInfoCanvas.scaleFactor = 540f / 1080f;
         StartCoroutine(UpdateDisplay());
     }
 
@@ -52,8 +52,8 @@ public class ResolutionManager : MonoBehaviour
         } 
         else
         {
-            Screen.SetResolution(1280, 720, false);
-            screenInfoCanvas.scaleFactor = 720f / 1080f;
+            Screen.SetResolution(960, 540, false);
+            screenInfoCanvas.scaleFactor = 540f / 1080f;
         }
         #endif
 
@@ -76,7 +76,7 @@ public class ResolutionManager : MonoBehaviour
         }
         else
         {
-            screenInfoCanvas.scaleFactor = 720f / 1080f;
+            screenInfoCanvas.scaleFactor = 540f / 1080f;
         }
         #else
 
