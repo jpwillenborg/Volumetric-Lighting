@@ -25,8 +25,12 @@ public class ResolutionManager : MonoBehaviour
 
     void Awake ()
     {
-        Screen.SetResolution(960, 540, false);
-        screenInfoCanvas.scaleFactor = 540f / 1080f;
+        #if UNITY_WEBGL && !UNITY_EDITOR
+            Screen.SetResolution(960, 540, false);
+        #else
+            Screen.SetResolution(1280, 720, false);
+        #endif
+
         StartCoroutine(UpdateDisplay());
     }
 
@@ -48,12 +52,14 @@ public class ResolutionManager : MonoBehaviour
         if (value)
         {
             Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
-            screenInfoCanvas.scaleFactor = (float)Screen.currentResolution.height / 1080f;
         } 
         else
         {
-            Screen.SetResolution(960, 540, false);
-            screenInfoCanvas.scaleFactor = 540f / 1080f;
+            #if UNITY_WEBGL && !UNITY_EDITOR
+                Screen.SetResolution(960, 540, false);
+            #else
+                Screen.SetResolution(1280, 720, false);
+            #endif
         }
         #endif
 
@@ -69,15 +75,6 @@ public class ResolutionManager : MonoBehaviour
         int webHeight = GetBrowserCanvasHeight();
         
         display.SetText("Resolution\n" + webWidth + " x " + webHeight);
-
-        if (isFullScreen)
-        {
-            screenInfoCanvas.scaleFactor = (float)webHeight / 1080f;
-        }
-        else
-        {
-            screenInfoCanvas.scaleFactor = 540f / 1080f;
-        }
         #else
 
         display.SetText("Resolution" + "\n" + Screen.width + " x " + Screen.height);
