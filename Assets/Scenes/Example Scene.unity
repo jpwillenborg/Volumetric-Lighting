@@ -2678,6 +2678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screenInfoCanvas: {fileID: 367623658}
   display: {fileID: 1034833067}
+  fullscreenToggle: {fileID: 241307971}
 --- !u!1 &1096788894
 GameObject:
   m_ObjectHideFlags: 0
